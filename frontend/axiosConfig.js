@@ -1,7 +1,7 @@
 // axiosConfig.js
 import axios from 'axios';
 import AuthService from './AuthService';
-import router from './router';  // import your Vue Router instance
+import router from './router';  
 
 const instance = axios.create({
   baseURL: process.env.VUE_APP_BASE_URL || 'http://localhost:8000',

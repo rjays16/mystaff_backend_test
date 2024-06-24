@@ -19,8 +19,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:api')->post('/logout', [AuthController::class, 'logout']);
 
-
-    Route::get('/videos', [VideoController::class, 'getAllVideos']);
-    Route::post('/videos', [VideoController::class, 'uploadVideo']);
-    Route::delete('/videos/{id}', [VideoController::class, 'deleteVideo']);
+Route::get('/videos', [VideoController::class, 'getAllVideos']);
+Route::post('/videos', [VideoController::class, 'uploadVideo']);
+Route::delete('/videos/{id}', [VideoController::class, 'deleteVideo']);
 

@@ -18,7 +18,7 @@ class VideoService
     public function uploadVideo(UploadedFile $file)
     {
         $fileName = time() . '_' . $file->getClientOriginalName();
-        $path = $fileName; // or 'videos/' . $fileName if you want a subfolder
+        $path = $fileName; 
     
         $fileContents = file_get_contents($file->getRealPath());
         
